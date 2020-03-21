@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Wonderbar;
+    src: url(./Wonderbar\ Demo.otf);
+}
+
+h2 {
+    font-family: Wonderbar;
+    /* font-size: 5rem; */
+}
+
 html,
 body,
 header,
@@ -23,5 +33,9 @@ header,
 
 .navbar-trans {
     background: transparent!important;
+}
+
+.nav a{
+    color: inherit;
 }
 
