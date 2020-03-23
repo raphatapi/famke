@@ -3,9 +3,19 @@
     src: url(./Wonderbar\ Demo.otf);
 }
 
-h2 {
+/* #mainTitle {
+    margin-top: -30px;
+} */
+
+#famke {
     font-family: Wonderbar;
-    /* font-size: 5rem; */
+    font-size: 80px;
+}
+
+#roumstead {
+    font-family: Wonderbar;
+    font-size: 250%;
+    margin-top: -2%;
 }
 
 html,
@@ -33,6 +43,17 @@ header,
 
 .navbar-trans {
     background: transparent!important;
+}
+
+.navbar .navbar-toggler-icon{
+    background-image: url(./famke_logo.png)!important;
+    height: 80px;
+    width: 80px;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    border: none;
 }
 
 .nav a{
