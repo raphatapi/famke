@@ -77,6 +77,20 @@ header,
     /* #famke {
         font-size: 100px;
     } */
+
+    .yourElement {
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+    
+    .navbar-toggler {
+        margin-top: 10px;
+    }
 }
 
 
