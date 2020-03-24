@@ -4,17 +4,18 @@
 }
 
 #mainTitle {
+    width: 100%;
     margin-top: 1.5%;
 }
 
 #famke {
     font-family: Wonderbar;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 #roumstead {
     font-family: Wonderbar;
-    font-size: 250%;
+    font-size: 300%;
     margin-top: -3%;
 }
 
@@ -67,4 +68,16 @@ header,
 .nav a{
     color: inherit;
 }
+
+
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* #famke {
+        font-size: 100px;
+    } */
+}
+
+
 
