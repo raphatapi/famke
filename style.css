@@ -3,19 +3,19 @@
     src: url(./Wonderbar\ Demo.otf);
 }
 
-/* #mainTitle {
-    margin-top: -30px;
-} */
+#mainTitle {
+    margin-top: 1.5%;
+}
 
 #famke {
     font-family: Wonderbar;
-    font-size: 80px;
+    font-size: 100px;
 }
 
 #roumstead {
     font-family: Wonderbar;
     font-size: 250%;
-    margin-top: -2%;
+    margin-top: -3%;
 }
 
 html,
@@ -41,8 +41,16 @@ header,
     height: 100%;
 }
 
+.navbar {
+    width: 15%;
+}
+
 .navbar-trans {
     background: transparent!important;
+}
+
+.navbar-toggler {
+    margin-top: 1%;
 }
 
 .navbar .navbar-toggler-icon{
@@ -51,7 +59,7 @@ header,
     width: 80px;
 }
 
-.navbar-toggler:focus, .navbar-toggler:active {
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
     outline: none;
     border: none;
 }
