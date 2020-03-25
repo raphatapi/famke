@@ -84,13 +84,18 @@ header,
     transition: left 0.3s ease-in;
 }
 
-
-
-
+.navbar-toggler-icon:hover{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+}
 
 #mainTitle {
     width: 80%;
     margin-top: 1.5%;
+    overflow: hidden;
 }
 
 #famke {
