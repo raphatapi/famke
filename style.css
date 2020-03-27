@@ -1,6 +1,41 @@
 @font-face {
-    font-family: Wonderbar;
-    src: url(./Wonderbar\ Demo.otf);
+    font-family: hipPocket;
+    src: url(./HipPocket-wze8.otf);
+}
+
+@font-face {
+    font-family: shagadelic;
+    src: url(./ShagadelicBold-jrKj.ttf);
+}
+
+@font-face {
+    font-family: groovalicious;
+    src: url(./GroovaliciousTweak-vnj7.ttf);
+}
+
+@font-face {
+    font-family: kingthings;
+    src: url(./KingthingsSlipperylip-44g6.ttf);
+}
+
+@font-face {
+    font-family: chocolateDealer;
+    src: url(./ChocolatedealerBold-534x.otf);
+}
+
+@font-face {
+    font-family: chickFont;
+    src: url(./Chick-wovP.ttf);
+}
+
+@font-face {
+    font-family: retroType;
+    src: url(./Retrotype-Y9B8.ttf);
+}
+
+@font-face {
+    font-family: Strenuous;
+    src: url(./strenuous\ 3d.ttf);
 }
 
 html,
@@ -99,20 +134,23 @@ header,
 }
 
 #famke {
-    font-family: Wonderbar;
+    font-family: hipPocket;
     font-size: 80px;
+    color: fuchsia;
 }
 
 #roumstead {
-    font-family: Wonderbar;
+    font-family: hipPocket;
     font-size: 300%;
     margin-top: -3%;
+    color: limegreen;
 }
 
 h4 {
     font-family: 'Signika', sans-serif;
     font-size: 2rem;
     font-weight: bold;
+    color: royalblue;
 }
 
 
