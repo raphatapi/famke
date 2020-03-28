@@ -1,3 +1,4 @@
+/* FONTS */
 @font-face {
     font-family: hipPocket;
     src: url(./HipPocket-wze8.otf);
@@ -6,36 +7,6 @@
 @font-face {
     font-family: shagadelic;
     src: url(./ShagadelicBold-jrKj.ttf);
-}
-
-@font-face {
-    font-family: groovalicious;
-    src: url(./GroovaliciousTweak-vnj7.ttf);
-}
-
-@font-face {
-    font-family: kingthings;
-    src: url(./KingthingsSlipperylip-44g6.ttf);
-}
-
-@font-face {
-    font-family: chocolateDealer;
-    src: url(./ChocolatedealerBold-534x.otf);
-}
-
-@font-face {
-    font-family: chickFont;
-    src: url(./Chick-wovP.ttf);
-}
-
-@font-face {
-    font-family: retroType;
-    src: url(./Retrotype-Y9B8.ttf);
-}
-
-@font-face {
-    font-family: Strenuous;
-    src: url(./strenuous\ 3d.ttf);
 }
 
 html,
@@ -65,16 +36,9 @@ header,
     height: 100%;
 }
 
-.navbar {
-    width: 15%;
-}
-
-.navbar-trans {
-    background: transparent!important;
-}
-
 .navbar-toggler {
     margin-top: 30px;
+    z-index: 2;
 }
 
 .navbar .navbar-toggler-icon{
@@ -88,44 +52,110 @@ header,
     border: none;
 }
 
-.nav a{
-    color: inherit;
-}
-
-.navbar-collapse {
-    position: absolute;
-    top: 120%;
-    left: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-}
-
-.navbar-collapse.collapsing {
-    height: auto;
-    -webkit-transition: left 0.3s ease;
-    -o-transition: left 0.3s ease;
-    -moz-transition: left 0.3s ease;
-    transition: left 0.3s ease;
+/* NAVBAR */
+.menu{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
     left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    z-index: 1;
+    transition: 0.5s;
 }
 
-.navbar-collapse.show {
+.menu.active{
     left: 0;
-    -webkit-transition: left 0.3s ease-in;
-    -o-transition: left 0.3s ease-in;
-    -moz-transition: left 0.3s ease-in;
-    transition: left 0.3s ease-in;
+    overflow: auto;
 }
 
-.navbar-toggler-icon:hover{
-    -webkit-animation-play-state:paused;
-    -moz-animation-play-state:paused;
-    -o-animation-play-state:paused;
-    animation-play-state:paused;
-    cursor: pointer;
-}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .nav ul {
+    position: relative;
+    padding-left: 0;
+  }
+  
+  .nav ul li {
+    text-align: center;
+    list-style: none;
+  }
+  
+  .nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+  }
+  
+  .nav ul:hover li a {
+    color:#0002; 
+    }
+  
+  .nav ul li:hover a {
+    color: #000;
+    background: #fff;
+  }
+  
+  .nav ul li a:before 
+  {
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgba(0,0,0,.1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s,left 0.5s;
+  }
+  
+  .nav ul li a:hover:before {
+    content: attr(data-text);
+    opacity: 1;
+    letter-spacing: 10px;
+    width: 1800px;
+    height: 1800px;
+  }
+  
+  .nav ul li:nth-child(6n+1) a:before
+  {
+    background: #1abc9c;
+  }
+  .nav ul li:nth-child(6n+2) a:before
+  {
+    background: #f1c40f;
+  }
+  .nav ul li:nth-child(6n+3) a:before
+  {
+    background: #8e44ad;
+  }
+  .nav ul li:nth-child(6n+4) a:before
+  {
+    background: #4CAF50;
+  }
+
+/* NAVBAR ENDS */
+
 
 #mainTitle {
     width: 80%;

@@ -23,11 +23,15 @@
                 <span class="navbar-toggler-icon animated infinite pulse delay-2s"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+                <div class="menu">
+                <div class="nav">
+                  <ul>
+                    <li><a href="#" data-text="Home">Home</a></li>
+                    <li><a href="#" data-text="About">About</a></li>
+                    <li><a href="#" data-text="Products">Products</a></li>
+                    <li><a href="#" data-text="Contact">Contact</a></li>
+                  </ul>
+                </div>
                 </div>
               </div>
             </nav>
@@ -56,13 +60,7 @@ crossorigin="anonymous"></script>
 <script src="./circletype.min.js"></script>
 <script src="./jquery.fittext.js"></script>
 <script src="./title-scroll.js" data-start="5000" data-speed="250"></script>
-<script>
-  var famke = new CircleType(document.getElementById('famke'))
-  .radius(250);
-  $(famke.element).fitText();
-
-  
-</script>
+<script src="./script.js"></script>
 
 </body>
 </html>
