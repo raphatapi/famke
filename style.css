@@ -102,6 +102,7 @@ header,
     color: #333;
     text-decoration: none;
     font-size: 3em;
+    font-family: shagadelic;
     padding: 5px 20px;
     display: inline-flex;
     font-weight: 700;
@@ -148,19 +149,19 @@ header,
   
   .nav ul li:nth-child(6n+1) a:before
   {
-    background: #1abc9c;
+    background: royalblue;
   }
   .nav ul li:nth-child(6n+2) a:before
   {
-    background: #f1c40f;
+    background: fuchsia;
   }
   .nav ul li:nth-child(6n+3) a:before
   {
-    background: #8e44ad;
+    background: purple;
   }
   .nav ul li:nth-child(6n+4) a:before
   {
-    background: #4CAF50;
+    background: limegreen;
   }
 
 /* NAVBAR ENDS */
