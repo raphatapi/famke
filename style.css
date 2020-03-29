@@ -61,7 +61,7 @@ header,
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 1);
+    background: rgb(189, 154, 154);
     z-index: 1;
     transition: 0.5s;
 }
@@ -72,7 +72,7 @@ header,
 }
 
 .social {
-    margin:5% auto;
+    margin:1% auto 0 auto;
     float:none;
     text-align: center;
 }
@@ -91,6 +91,7 @@ header,
   
   .nav ul {
     position: relative;
+    margin-top: 5%;
     padding-left: 0;
     width: 100%;
   }
@@ -117,8 +118,9 @@ header,
     }
   
   .nav ul li:hover a {
-    color: #000;
-    background: #fff;
+    color: rgb(71, 71, 71);
+    text-shadow:1px 1px 10px #fff, 1px 1px 10px #ccc;
+    /* background: #fff; */
   }
   
   .nav ul li a:before 
@@ -133,7 +135,6 @@ header,
     align-items: center;
     font-size: 5em;
     color: rgba(0,0,0,.1);
-    /* border-radius: 50%; */
     z-index: -1;
     opacity: 0;
     font-weight: 900;
@@ -144,6 +145,7 @@ header,
   
   .nav ul li a:hover:before {
     content: attr(data-text);
+    text-shadow: none;
     opacity: 1;
     letter-spacing: 10px;
     width: 100%;
@@ -152,19 +154,19 @@ header,
   
   .nav ul li:nth-child(6n+1) a:before
   {
-    background: royalblue;
+    background: purple;
   }
   .nav ul li:nth-child(6n+2) a:before
   {
-    background: fuchsia;
+    background: limegreen;
   }
   .nav ul li:nth-child(6n+3) a:before
   {
-    background: purple;
+    background: fuchsia;
   }
   .nav ul li:nth-child(6n+4) a:before
   {
-    background: limegreen;
+    background: royalblue;
   }
 
 /* NAVBAR ENDS */
