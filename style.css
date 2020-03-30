@@ -41,10 +41,30 @@ header,
     z-index: 2;
 }
 
-.navbar .navbar-toggler-icon{
+.navbar .navbar-toggler-icon {
     background-image: url(./famke_logo.png)!important;
     height: 80px;
     width: 80px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.navbar .navbar-toggler-icon:hover {
+    box-shadow: 0px 0px 150px #000000;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
 }
 
 .navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active {
@@ -72,8 +92,8 @@ header,
 }
 
 .social {
-    margin:1% auto 0 auto;
-    float:none;
+    margin: 0 auto;
+    float: none;
     text-align: center;
 }
 
@@ -174,28 +194,31 @@ header,
 
 #mainTitle {
     width: 80%;
-    margin-top: 1.5%;
+    margin: 1% auto;
     overflow: hidden;
+    font-family: hipPocket;
 }
 
 #famke {
-    font-family: hipPocket;
-    font-size: 80px;
+    font-size: 500%;
     color: fuchsia;
 }
 
 #roumstead {
-    font-family: hipPocket;
-    font-size: 300%;
-    margin-top: -3%;
+    font-size: 280%;
+    margin-top: -1%;
     color: limegreen;
 }
 
-h4 {
-    font-family: 'Signika', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: royalblue;
+#tagline {
+    color: rgb(88, 122, 224);
+    font-size: 200%;
+    /* letter-spacing: 30px; */
+}
+
+.star img{
+  height: 45vh;
+  width: auto;
 }
 
 
