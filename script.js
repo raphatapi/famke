@@ -4,7 +4,7 @@ $(document).ready(function(){
     .radius(300);    
 
     new CircleType(document.getElementById('famke'))
-    .radius(300);
+    .radius(350);
 
     $('.navbar-toggler').click(function(){
         $('.menu').toggleClass('active');
