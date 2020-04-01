@@ -9,4 +9,8 @@ $(document).ready(function(){
     $('.navbar-toggler').click(function(){
         $('.menu').toggleClass('active');
     });
+
+    $(".star").sparkle({
+        color: "#ff00ff"
+    });
 });
