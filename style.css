@@ -15,7 +15,7 @@ header,
 .background {
     height:100vh;
     color: white;
-    background: url("./2020-03-15.png") no-repeat center center fixed; 
+    background: url("./2020-03-15_opt.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -194,7 +194,7 @@ header,
 
 #mainTitle {
     width: 80%;
-    margin: 0 auto;
+    margin: -1% auto;
     overflow: hidden;
     font-family: hipPocket;
 }
@@ -207,6 +207,7 @@ header,
 #mainTitle img {
   margin: -2% auto;
   width: 100%;
+  height: 45vh;
 }
 
 #roumstead {
@@ -219,11 +220,24 @@ header,
     color: rgb(88, 122, 224);
     font-size: 200%;
     margin-bottom: 0;
-    /* letter-spacing: 30px; */
+    margin-top: 2%;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 .left-stars, .right-stars {
   padding: 0;
+  overflow: hidden;
 }
 
 .star img{
