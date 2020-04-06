@@ -311,6 +311,21 @@ header, .background {
   line-height: 1.2em;
 }
 
+.red {
+  background-color: hsl(0, 80%, 38%);
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.red h1 {
+  font-family: hipPocket;
+  font-size: 500%;
+  color: purple;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .yourElement {
