@@ -311,13 +311,13 @@ header, .background {
   line-height: 1.2em;
 }
 
-.red {
+.curtain {
   background-color: hsl(0, 80%, 38%);
   padding: 0!important;
   margin: 0!important;
 }
 
-.red h1 {
+.curtain h1 {
   font-family: hipPocket;
   font-size: 500%;
   color: purple;
