@@ -24,10 +24,10 @@
           <div class="menu">
             <div class="nav">
               <ul class="items">
-                <li><a href="#" data-text="Home">HOME</a></li>
-                <li><a href="#" data-text="About">ABOUT</a></li>
-                <li><a href="#" data-text="Events">EVENTS</a></li>
-                <li><a href="#" data-text="Contact">CONTACT</a></li>
+                <li class="menu-link"><a href="#home" data-text="Home">HOME</a></li>
+                <li class="menu-link"><a href="#about" data-text="About">ABOUT</a></li>
+                <li class="menu-link"><a href="#events" data-text="Events">EVENTS</a></li>
+                <li class="menu-link"><a href="#contact" data-text="Contact">CONTACT</a></li>
                 <div class="social">
                   <ul>
                     <li><a href="#" class="nav-link"><i class="fab fa-instagram fa-lg"></i></a></li>
@@ -41,7 +41,7 @@
         </div>
       </nav>
       <!-- END NAVBAR -->
-      <div class="container-fluid">
+      <div id="home" class="container-fluid">
         <div class="row">
           <div class="col-3 left-stars">
             <div class="star animated slideInLeft delay-2s">
@@ -73,7 +73,7 @@
   </div>
 </header>
 <body>
-  <div class="container-fluid h-100 who">
+  <div id="about" class="container-fluid h-100 who">
     <div class="row">
       <div class="col-12">
         <div class="who-title">
@@ -112,7 +112,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid h-100 curtain">
+  <div id="events" class="container-fluid h-100 curtain">
     <div class="rxWorld">
       <section class="rnOuter ">
         <section class="aoTable">
@@ -141,7 +141,13 @@
       </section>
     </div>
   </div>
-  
+  <div id="contact" class="container-fluid h-100 contact">
+    <div class="row">
+      <div class="col-12">
+        <h1>CONTACT</h1>
+      </div>
+    </div>
+  </div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
